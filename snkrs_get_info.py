@@ -1,16 +1,15 @@
-# encoding: utf-8
+#!/usr/bin/python
+# encoding=utf-8
 import requests
 
-bearer = "Bearer "
-token = "222"
-
 def get_shoe_info():
+    global res1
     url = 'https://api.nike.com/snkrs/content/v1/?&country=CN&language=zh-Hans&offset=0&orderBy=published'
     try:
         res1 = requests.get(url)
+        res1.encoding = 'utf-8'
     except:
         print('warning')
-    res1.encoding = 'utf-8'
     # print(res1.content)
     return res1
 
