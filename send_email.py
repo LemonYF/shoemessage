@@ -3,14 +3,15 @@ from email.header import Header
 import smtplib
 import yagmail
 
+
 def sendEmail() :
     server = yagmail.SMTP(user='919024797@qq.com', password='xfmnhxzewbxibeca', host='smtp.qq.com', port=25,
                           smtp_starttls=True, smtp_ssl=False)
     content = ['有新的鞋款发售，请注意APP！！！！！！！', 'used for yagmail']
-    server.send('919024797@qq.com', '突袭发售啦！打开SNKRS！', content)  # 对方邮箱，主题，邮件内容
+    # server.send('919024797@qq.com', '突袭发售啦！打开SNKRS！', content)  # 对方邮箱，主题，邮件内容
     server.send('yefan1_test@163.com', '突袭发售啦！打开SNKRS！', content)  # 对方邮箱，主题，邮件内容
-    server.send('1054273874@qq.com', '宝贝儿，突袭发售啦！打开SNKRS！', content)  # 对方邮箱，主题，邮件内容
-    server.send('136610832@qq.com', '死胖子，突袭发售啦！打开SNKRS！', content)  # 对方邮箱，主题，邮件内容
+    # server.send('1054273874@qq.com', '宝贝儿，突袭发售啦！打开SNKRS！', content)  # 对方邮箱，主题，邮件内容
+    # server.send('136610832@qq.com', '死胖子，突袭发售啦！打开SNKRS！', content)  # 对方邮箱，主题，邮件内容
     # # 输入Email地址和口令:
     # from_addr = 'yefan1_test@163.com'
     # password = 'yezhizi1994421'
