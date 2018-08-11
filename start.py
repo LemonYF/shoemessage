@@ -24,6 +24,7 @@ while i > FLAG:
             print(num, 'exist')
             if send_time <= 2:
                 send_time = send_time + 1
+                print('this is break1')
                 send_email.sendEmail()
                 print(num)
             else:
